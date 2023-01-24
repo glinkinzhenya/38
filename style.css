@@ -1,0 +1,181 @@
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+}
+
+.categories-iphone {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-iphone__img {
+    width: 180px;
+}
+
+.categories-mac {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-mac__img {
+    width: 180px;
+}
+
+.categories-watch {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categories-watch__img {
+    width: 180px;
+}
+
+.product {
+    width: 300px;
+}
+
+.product-iphone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.product-iphone__2 {
+    cursor: pointer;
+}
+
+.product-iphone__2-img {
+    width: 80px;
+}
+
+.product-iphone__3 {
+    cursor: pointer;
+}
+
+.product-iphone__3-img {
+    width: 80px;
+}
+
+.product-iphone__4 {
+    cursor: pointer;
+}
+
+.product-iphone__4-img {
+    width: 80px;
+}
+
+.product-mac {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-mac__1 {
+    text-align: center;
+}
+
+.product-mac__1-img {
+    width: 150px;
+}
+
+.product-mac__2 {
+    text-align: center;
+}
+
+.product-mac__2-img {
+    width: 180px;
+}
+
+.product-mac__3 {
+    text-align: center;
+}
+
+.product-mac__3-img {
+    width: 150px;
+}
+
+.product-watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-watch__1 {
+    text-align: center;
+}
+
+.product-watch__1-img {
+    width: 150px;
+}
+
+.product-watch__2 {
+    text-align: center;
+}
+
+.product-watch__2-img {
+    width: 150px;
+}
+
+.product-watch__3 {
+    text-align: center;
+}
+
+.product-watch__3-img {
+    width: 150px;
+}
+
+.active {
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: antiquewhite;
+}
+
+.iphone {
+    position: absolute;
+    left: 600px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 30px;
+
+}
+
+.none {
+    display: none;
+}
+
+.button {
+    background-color: black;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    width: 150px;
+    border: 1px solid black;
+    cursor: pointer;
+}
