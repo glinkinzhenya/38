@@ -86,10 +86,13 @@ productIphone4.addEventListener("click", () => {
 })
 
 buttonIphone2.addEventListener("click", () => {
-    alert("Вы купили iPhone 2G")
-    setTimeout(function () {
-        location.reload();
-    }, 1000);
+    // alert("Вы купили iPhone 2G")
+    // setTimeout(function () {
+    //     location.reload();
+    // }, 1000);
+
+    productIphone2info.classList.add("none");
+    productIphone2.classList.remove("iphone");
 })
 
 buttonIphone3.addEventListener("click", () => {
