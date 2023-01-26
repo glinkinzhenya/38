@@ -10,23 +10,6 @@
     gap: 40px;
 }
 
-.categories-iphone,
-.categories-notebook,
-.categories-watch {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.categories-iphone > img,
-.categories-notebook >img,
-.categories-watch >img{
-   width: 180px;
-}
-
 .product {
     width: 250px;
     padding-left: 50px;
@@ -42,4 +25,17 @@
     width: 150px;
     border: 1px solid black;
     cursor: pointer;
+}
+
+.klass {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.klass > img {
+    width: 180px;
 }

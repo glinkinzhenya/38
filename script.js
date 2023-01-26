@@ -73,7 +73,6 @@ const product = [
     }
 ]
 
-
 const container = document.createElement("div");
 container.classList.add("container");
 document.body.append(container);
@@ -92,13 +91,12 @@ container.append(inform);
 
 categories.forEach(i => {
     const div = document.createElement("div");
-    div.classList.add(`categories-${i.categories}`);
+    div.classList.add(`klass`);
     icon.append(div);
 
     const img = document.createElement("img");
     img.setAttribute("src", `${i.img}`);
     div.append(img);
-
 
     div.addEventListener("click", () => {
         number.innerHTML = "";
@@ -133,11 +131,9 @@ function rander(y, per) {
         forDescription.append(forButton);
         inform.append(iphone);
 
-        iphone.addEventListener("click", () => {
-
+        button.addEventListener("click", () => {
             alert(`Вы придбали ${y.name}`)
             location.reload();
-
         });
 
     } else {
@@ -154,149 +150,9 @@ function rander(y, per) {
         iphone.addEventListener("click", () => {
             inform.innerHTML = "";
 
-
             console.log(`${y.name}`);
             rander(y, "l")
-
         });
         return iphone;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const categoriesIphone = document.querySelector(".categories-iphone");
-// const categoriesMac = document.querySelector(".categories-mac");
-// const categoriesWatch = document.querySelector(".categories-watch");
-
-// const productIphone = document.querySelector(".product-iphone");
-// const productMac = document.querySelector(".product-mac");
-// const productWatch = document.querySelector(".product-watch");
-
-// const info = document.querySelector(".info");
-
-
-// categoriesIphone.addEventListener("click", () => {
-//     categories("iphone");
-//     phone.forEach((i) => {
-//         rander(i)
-//     });
-// });
-
-// categoriesMac.addEventListener("click", () => {
-//     categories("mac");
-//     productIphone.innerHTML = "";
-// });
-
-// categoriesWatch.addEventListener("click", () => {
-//     categories("watch");
-// });
-
-
-// function categories(params) {
-//     if (params === "iphone") {
-//         categoriesIphone.classList.add("active");
-//         productIphone.setAttribute("style", "");
-//     } else {
-//         categoriesIphone.classList.remove("active");
-//         productIphone.setAttribute("style", "display: none");
-//     };
-
-//     if (params === "mac") {
-//         categoriesMac.classList.add("active");
-//         productMac.setAttribute("style", "");
-//     } else {
-//         categoriesMac.classList.remove("active");
-//         productMac.setAttribute("style", "display: none");
-//     };
-
-//     if (params === "watch") {
-//         categoriesWatch.classList.add("active");
-//         productWatch.setAttribute("style", "");
-//     } else {
-//         categoriesWatch.classList.remove("active");
-//         productWatch.setAttribute("style", "display: none");
-//     };
-// }
-
-
-// const phone = [
-//     {
-//         name: "iPhone 2G",
-//         img: "img/1.png",
-//         description: "<p>Сеть: GSM / GPRS WCDMA / HSDPA (850 / 1900 / 2100 МГц)</p><p> Операционная система: iPhone 2.0 OS.</p><p>Дисплей: сенсорный, 3,5 дюйма, 480 х 320 точек</p><p>Аккумулятор: 1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки</p><p>Экран: 3.5, сенсорный, 480x320, емкостный, TFT, 16 млн. ...</p><p>Камера: 2 мпикс, 1600x1200, пинч-зум</p><p>Вид: Моноблок, 135 г, 115x61x11.6 мм</p>"
-//     },
-//     {
-//         name: "iPhone 3G",
-//         img: "img/2.png",
-//         description: "<p>Сеть: GSM / GPRS WCDMA / HSDPA (850 / 1900 / 2100 МГц)</p><p> Операционная система: iPhone 2.0 OS.</p><p>Дисплей: сенсорный, 3,5 дюйма, 480 х 320 точек</p><p>Аккумулятор: 1400 мА*ч Li-Ion, 8 ч разг.(GSM), 24 ч музыки</p><p>Экран: 3.5, сенсорный, 480x320, емкостный, TFT, 16 млн. ...</p><p>Камера: 2 мпикс, 1600x1200, пинч-зум</p><p>Вид: Моноблок, 135 г, 115x61x11.6 мм</p>"
-//     }
-// ]
-
-
-
-
-// function rander(i, per) {
-
-//     const iphone = document.createElement("div");
-//     const iphoneName = document.createElement("p");
-//     iphone.append(iphoneName);
-//     iphoneName.innerText = `${i.name}`;
-//     const img = document.createElement("img");
-//     img.setAttribute("src", `${i.img}`);
-//     iphone.append(img);
-
-
-//     if (per) {
-//         const forDescription = document.createElement("div");
-//         forDescription.innerHTML = `${i.description}`;
-//         iphone.append(forDescription);
-//         const forButton = document.createElement("div");
-//         const button = document.createElement("button");
-//         button.classList.add("button");
-//         button.innerText = `Придбати`;
-//         forButton.append(button);
-//         forDescription.append(forButton);
-
-//         info.append(iphone);
-
-//     } else {
-
-//         iphone.addEventListener("click", () => {
-//             console.log(`${i.name}`);
-
-//             rander(i, info)
-
-//         });
-//         productIphone.append(iphone);
-//     }
-// }
